@@ -1,4 +1,4 @@
-# lorem
+# Banyan Tree
 A one-stop solution for all your college club needs!
 Stay tuned for more information
 ## Contributers:
