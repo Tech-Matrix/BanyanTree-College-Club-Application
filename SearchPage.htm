@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="C:\Users\Nive\Desktop\ICEBREAKER\tiles.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="search-input">
+              <a href="" target="_blank" hidden></a>
+              <input type="text" placeholder="Enter Club Name">
+              <div class="autocom-box">
+                <!-- here list are inserted from javascript -->
+              </div>
+              <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+        <script src="C:\Users\Nive\Desktop\ICEBREAKER\suggestions.js"></script> 
+        <script src="C:\Users\Nive\Desktop\ICEBREAKER\script.js"></script> 
+        <!--<script>
+            getData();
+            var arr = [];
+            async function getData(){
+                const response = await fetch("C:\\Users\\Nive\\Desktop\\ICEBREAKER\\clubdata.csv");
+                const data = await response.text();
+
+                const table = data.split('\n').slice(1);
+                var k = 0; 
+                rows.forEach(
+                    elt=>{
+                        const row = elt.split(',');
+                        const club = row(0);
+                        arr.push(club);
+                        k++;
+                    }
+                );
+            }
+            console.log(arr);
+        </script>-->
+        <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
+
+        
+        <div class="main">
+            <h1 class="header">Clubs in your University</h1>
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+            <div class="image__overlay">
+                <div class="image__title">Aeolus
+
+                </div>
+            </div>
+        </div></a>
+
+
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+            <div class="image__overlay">
+                <div class="image__title">Aeolus
+
+                </div>
+            </div>
+        </div></a>
+
+
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+            <div class="image__overlay">
+                <div class="image__title">Aeolus
+
+                </div>
+            </div>
+        </div></a>
+
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+            <div class="image__overlay">
+                <div class="image__title">Aeolus
+
+                </div>
+            </div>
+        </div></a>
+    
+    <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+        <!--<img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+        <div class="image__overlay">
+            <div class="image__title">Aeolus
+
+            </div>
+        </div>-->
+        <div class = "add_bt" id= "xop-box">
+            <i class="fa fa-plus" id="add" style="font-size:20px;color:white"></i>
+        </div>
+        
+    </div></a>
+    </div>
+    
+    <div class="main">
+        <h1 class="header">Clubs in other Universities</h1>
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
+            <div class="image__overlay">
+                <div class="image__title">Aeolus
+
+                </div>
+            </div>
+        </div></a>
+
+
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
+            <div class="image__overlay">
+                <div class="image__title">Aeolus
+
+                </div>
+            </div>
+        </div></a>
+
+    <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
+            <div class="image__overlay">
+                <div class="image__title">Aeolus
+
+                </div>
+            </div>
+        </div></a>
+    <a href ="https://jinja.palletsprojects.com/en/3.0.x/">
+    <div class="image">
+        <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
+        <div class="image__overlay">
+            <div class="image__title">Aeolus
+
+            </div>
+        </div>
+    </div></a>
+
+    <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
+        <!--<img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+        <div class="image__overlay">
+            <div class="image__title">Aeolus
+
+            </div>
+        </div>-->
+        <div class = "add_bt" id= "xop-box">
+            <i class="fa fa-plus" id="add" style="font-size:20px;color:white"></i>
+        </div>
+        
+    </div></a>
+
+</div>
+
+<script>
+    const csv = require('csv-parser');
+    const fs = require('fs');
+    var results = [];
+    var suggestions = [];
+
+    fs.createReadStream('C:\\Users\\Nive\\Desktop\\ICEBREAKER\\clubdata.csv')
+        .pipe(csv({}))
+        .on('data',(data)=> window.results.push(data))
+        .on('end',()=> {
+            for(let i=0;i<results.length;i++)
+            {
+                //console.log("hi");
+                window.suggestions.push(results[i].Club);
+                
+            }
+            //console.log(suggestions);
+            //suggestions;                                          
+            //console.log("hi"+results+"bye");
+        });
+
+
+    console.log(suggestions);
+    </script>
+    
+    </body>
+</html>
