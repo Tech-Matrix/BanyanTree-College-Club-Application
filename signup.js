@@ -1,9 +1,3 @@
-// document
-// .querySelector('#hide1')
-// .addEventListener("click",function(){
-//     $('.hide1').removeClass('hide1')
-// });
-
 //eye visiblity
 var eye = document.getElementById(`hide1`);
 var eye_sl = document.getElementById(`hide2`);
@@ -25,16 +19,6 @@ eye.addEventListener("click",function(){
     password.type = 'password';
 })
 
-// const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-// const csvWriter = createCsvWriter({
-//     path: 'login.csv',
-//     header: [
-//         {id: 'name', title: 'NAME'},
-//         {id: 'lang', title: 'LANGUAGE'}
-//     ]
-// });
-
-// getting user info in array
 const wrapper = document.querySelector('.wrapper'),
     form = wrapper.querySelectorAll('.form'),
     submitinput = form[0].querySelector('#submits2');
@@ -42,17 +26,25 @@ const wrapper = document.querySelector('.wrapper'),
 function getDataForm(e){
     e.preventDefault();
     var formData = new FormData(form[0]);
-    alert(formData.get('Username')+'-'+formData.get('Password')+'-'+formData.get('University'));
-    // console.log(document.querySelector(`.user`).value) ;
+    // alert(formData.get('Username')+'-'+formData.get('Password')+'-'+formData.get('University'));
     var signup1 = [document.querySelector(`.Username`).value , document.querySelector(`.Password`).value  , document.querySelector(`.University`).value ];
     console.log(signup1);
-    // const records = [
-    //     {name: 'Bob',  lang: 'French, English'},
-    //     {name: 'Mary', lang: 'English'}
-    // ];
+    if((document.querySelector(`.Username`).value) == '')
+        document.querySelector(`.user_error`).innerHTML = '* Please enter a Username';
+    else
+        document.querySelector(`.user_error`).innerHTML = '';
+
     
-    
-    // csvWriter.writeRecords(records) 
+    if((document.querySelector(`.Password`).value) == '')
+        document.querySelector(`.password_error`).innerHTML = '* Please enter a Password';
+    else
+        document.querySelector(`.password_error`).innerHTML = '';
+
+    if((document.querySelector(`.University`).value) == '')
+        document.querySelector(`.University_error`).innerHTML = '* Please enter a University';
+    else
+    document.querySelector(`.University_error`).innerHTML = '';
+
 }
 
 document.addEventListener('DOMContentLoaded', function(){
