@@ -8,45 +8,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Sign Up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
 </head>
-<body>
-    <div class="banyan">
+<body style="font-family: 'Montserrat', sans-serif;">
+    <div style="text-align: center;">
+        <div class="banyan" style="text-align: center;display: block;">
+          <img src="./assets/banyan-white.png" alt="" style="width: 15%;" >
+        </div>
         <h1 style="color: white;">Banyan Tree</h1>
-        <img src="./assets/banyan-white.png" alt="" class="banyan_img">
     </div>
 
-    <h3 style="color: white;">Sign Up</h3>
+    <h3 style="color: white;text-align: center;font-size: 30px;">Sign Up</h3>
 
-    <div class="wrapper">
+    <div class="wrapper" style="text-align: center;">
         <form class="form">
             <div class="entry">
                 <div class="entries" id="Username">
-                    <label >Username</label><br>
-                    <input type="text" name="user_name" placeholder="Username" id="enter" class="Username" size="30rem">
+                    <label style="padding-right: 220px;">Username</label><br>
+                    <div style="padding-top: 5px;"> 
+                        <input type="text" name="user_name" placeholder="Username" id="enter" class="Username" size="40rem"  value="">
+                        <p class="user_error" style="color: red;"></p>
+                    </div>
+
                 </div>
                 <br>
                 <div  class="entries" id="Password">
-                    <label >Password</label><br>
-                    <input type="password" name="password" placeholder="Password" id="enter" class="Password" size="30rem">
-                    <span>
-                        <i id="hide1" class="fa fa-eye" style="display: none;"></i>
-                        <i id="hide2" class="fa fa-eye-slash" ></i>
-                    </span>
+                    <label style="padding-right: 240px;">Password</label><br>
+                    <div style="padding-top: 5px;padding-left: 15px;">
+                        <input type="password" name="password" placeholder="Password" id="enter" class="Password" size="40rem" value="">
+                        <span>
+                            <i id="hide1" class="fa fa-eye" style="display: none;"></i>
+                            <i id="hide2" class="fa fa-eye-slash" ></i>
+                        </span>
+                        <p class="password_error" style="color: red;"></p>
+                    </div>
+
                 </div>
                 <br>
                 <div class="entries" id="University">
-                    <label >University</label><br>
-                    <input type="text" name="college" placeholder="University" id="enter" class="University" size="30rem">
+                    <label style="padding-right: 220px;">University</label><br>
+                    <div style="padding-top: 5px;">
+                        <input type="text" name="college" placeholder="University" id="enter" class="University" size="40rem" value="">
+                        <p class="University_error" style="color: red;"></p>
+                    </div>
+
                 </div>
             </div>
         
             <br><br>
-            <div class="buttons">
+            <div class="buttons" style="padding-left: 25rem;">
                 <div class="space" style="padding-right: 1.5rem;">
-                    <input type="submit" class="submits" id="submits1" value="←       Back"  >
+                    <input type="submit" class="submits" id="submits1" value="←       Back" style="cursor: pointer;" >
                 </div>
                 <div class="space" style="padding-left: 1.5rem;">
-                    <input type="submit" class="submits" id="submits2" value="Next        →" >
+                    <a href="./signup2.html">
+                    <input type="submit" class="submits" id="submits2" value="Next        →" style="cursor: pointer;" >
+                    </a>
                 </div>
                 
             </div>
