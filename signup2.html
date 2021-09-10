@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Sign Up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+<body style="font-family: 'Montserrat', sans-serif;">
+    <div style="text-align: center;">
+        <div class="banyan" style="text-align: center;display: block;">
+          <img src="./assets/banyan-white.png" alt="" style="width: 15%;" >
+        </div>
+        <h1 style="color: white;">Banyan Tree</h1>
+    </div>
+
+    <h3 style="color: white;text-align: center;font-size: 30px;">Sign Up</h3>
+
+    <div class="wrapper" style="text-align: center;">
+        <form class="form">
+            <div class="entry">
+                <div class="entries" id="fullname">
+                    <label style="padding-right: 225px;">Full Name</label><br >
+                    <div style="padding-top: 5px; ">
+                        <input type="text" name="fullname" placeholder="Name" id="enter" class="fullname" size="40rem"  value="">
+                        <p class="name_error" style="color: red;"></p>
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="entries" id="fullname">
+                    <label style="padding-right: 200px;">Phone Number</label><br>
+                    <div  style="padding-top: 5px; ">
+                        <input type="tel" name="phone" placeholder="Number" id="enter" class="phone" size="40rem"  value="">
+                        <p class="phone_error" style="color: red;"></p>
+                    </div>
+
+                </div>
+                <br>
+                <div class="entries" id="University">
+                    <label style="padding-right: 225px;">Email ID</label><br>
+                    <div style="padding-top: 5px; ">
+                        <input type="text" name="email" placeholder="xyz@example.com" id="enter" class="email" size="40rem" value="">
+                        <p class="email_error" style="color: red;"></p>
+                    </div>
+                </div>
+            </div>
+        
+            <br><br>
+            <div class="buttons" >
+                <div class="space" style="padding-left: 34rem;">
+                    <input type="submit" class="submits" value="Submit" style="padding-right: 1.5rem;padding-left: 1.5rem;text-align: center;cursor: pointer;">
+                </div>
+                
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+<script src="./signup.js" defer></script>
+
+</html>
