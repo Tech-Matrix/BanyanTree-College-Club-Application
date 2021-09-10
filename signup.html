@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="banyan">
+        <h1 style="color: white;">Banyan Tree</h1>
+        <img src="./assets/banyan-white.png" alt="" class="banyan_img">
+    </div>
+
+    <h3 style="color: white;">Sign Up</h3>
+
+    <div class="wrapper">
+        <form class="form">
+            <div class="entry">
+                <div class="entries" id="Username">
+                    <label >Username</label><br>
+                    <input type="text" name="user_name" placeholder="Username" id="enter" class="Username" size="30rem">
+                </div>
+                <br>
+                <div  class="entries" id="Password">
+                    <label >Password</label><br>
+                    <input type="password" name="password" placeholder="Password" id="enter" class="Password" size="30rem">
+                    <span>
+                        <i id="hide1" class="fa fa-eye" style="display: none;"></i>
+                        <i id="hide2" class="fa fa-eye-slash" ></i>
+                    </span>
+                </div>
+                <br>
+                <div class="entries" id="University">
+                    <label >University</label><br>
+                    <input type="text" name="college" placeholder="University" id="enter" class="University" size="30rem">
+                </div>
+            </div>
+        
+            <br><br>
+            <div class="buttons">
+                <div class="space" style="padding-right: 1.5rem;">
+                    <input type="submit" class="submits" id="submits1" value="←       Back"  >
+                </div>
+                <div class="space" style="padding-left: 1.5rem;">
+                    <input type="submit" class="submits" id="submits2" value="Next        →" >
+                </div>
+                
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+<script src="./signup.js" defer></script>
+
+</html>
