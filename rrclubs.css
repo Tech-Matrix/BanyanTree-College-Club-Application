@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+
+.header
+{
+  color: #efefef;
+  padding: 30px;
+}
+
+body{
+    background-image: url('C:\\Users\\Nive\\Desktop\\ICEBREAKER\\bgimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    /*padding: 0 20px;*/
+  }
+
+.image{
+
+    position:relative;                                 
+    width:200px;
+    display: inline-block;
+    margin:0px 20px;
+    border-radius: 10px;
+	cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out,;
+    
+}
+/*
+.xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+*/
+
+.xop-section {
+	max-width: 960px;
+	margin: 50px auto;
+	padding: 6% 2%;
+}
+
+.xop-grid {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.xop-grid:after {
+	clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+	content: '';
+	display: table;
+}
+
+.xop-grid li {
+	width: 328px;
+	height: 328px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.xop-grid li {
+	width: 328px;
+	height: 328px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+
+.xop-box:hover {
+	transform: scale(1.05); 
+}
+
+.xop-img-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/paint.jpg);
+}
+
+.xop-img-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/soap.jpg);
+}
+
+.xop-img-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/flower.jpg);
+}
+
+.xop-img-4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/feather.jpg);
+}
+
+.xop-info {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+}
+
+.xop-info h3 {
+	font-family: 'Pacifico', cursive;
+	font-weight: 400;
+	color: #fff;
+	font-size: 42px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+	line-height: 1.5;
+}
+
+.xop-info p {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+	margin: 0 30px;
+	font-size: 14px;
+	line-height: 2;
+}
+
+.image__img{
+    
+    display:block;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.image:hover{
+    transform: scale(1.05); 
+}
+
+
+.image__overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color:white;
+    display:flex;
+    font-family: 'Quicksand',sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition:opacity 0.25s;
+    border-radius: 15px;
+}
+
+.image__overlay > *{
+    transform:translateY(10px);
+    transition:transform 0.25s;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+.image__overlay:hover > *{
+    transform:translateY(0);
+}
+
+
+
+.image__title{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin:0px 30px;
+
+}
+
+.wrapper{
+    max-width: 450px;
+    margin: 10px auto 0px 0px;
+    padding: 10px 350px;
+}
+
+
+.xop-grid {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.xop-grid:after {
+	clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+	content: '';
+	display: table;
+}
+
+.xop-grid li {
+	width: 328px;
+	height: 328px;
+	display: inline-block;
+	margin: 20px;
+}
+
+
+#position:hover{
+    transform: scale(1.05); 
+}
+#position{
+    justify-content:left;
+    color: rgb(19, 38, 143);
+    background-color:white;
+    border-radius: 25px;
+    margin:25px 10px 0px;
+    font-size: 35px;
+    border-color:rgb(19, 38, 143) ;
+
+    position: relative;
+	cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out, 
+    -webkit-transform 0.2s ease-in-out;
+	-moz-transition:  0.2s ease-in-out, 
+    -moz-transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out, 
+    transform 0.2s ease-in-out,;
+}
