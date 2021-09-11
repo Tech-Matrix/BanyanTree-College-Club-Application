@@ -7,9 +7,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="stylesheet" href="C:\Users\Nive\Desktop\ICEBREAKER\tiles.css">
         <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
+        
         <div class="wrapper">
+            <a href = "index2.html"><i class='bx bx-left-arrow-alt' id="position"></i></a>
             <div class="search-input">
               <a href="" target="_blank" hidden></a>
               <input type="text" placeholder="Enter Club Name">
@@ -19,163 +22,112 @@
               <div class="icon"><i class="fas fa-search"></i></div>
             </div>
           </div>
-        <script src="C:\Users\Nive\Desktop\ICEBREAKER\suggestions.js"></script> 
-        <script src="C:\Users\Nive\Desktop\ICEBREAKER\script.js"></script> 
-        <!--<script>
-            getData();
-            var arr = [];
-            async function getData(){
-                const response = await fetch("C:\\Users\\Nive\\Desktop\\ICEBREAKER\\clubdata.csv");
-                const data = await response.text();
-
-                const table = data.split('\n').slice(1);
-                var k = 0; 
-                rows.forEach(
-                    elt=>{
-                        const row = elt.split(',');
-                        const club = row(0);
-                        arr.push(club);
-                        k++;
-                    }
-                );
-            }
-            console.log(arr);
-        </script>-->
-        <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
+        
+        
 
         
+        
+        <h1 class="header">Clubs in your University</h1>
         <div class="main">
-            <h1 class="header">Clubs in your University</h1>
-        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
+            <img class = "image__img" style="height: 170px;" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\hackerspace.png" alt="Club Name">
             <div class="image__overlay">
-                <div class="image__title">Aeolus
+                <div class="image__title">Hackerspace
 
                 </div>
             </div>
         </div></a>
 
 
-        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
+            <img class = "image__img" style="height: 170px;" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\ecell.jpg" alt="Club Name">
             <div class="image__overlay">
-                <div class="image__title">Aeolus
+                <div class="image__title">E-Cell
 
                 </div>
             </div>
         </div></a>
 
 
-        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
+            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\debsoc.jpg" alt="Club Name">
             <div class="image__overlay">
-                <div class="image__title">Aeolus
+                <div class="image__title">Debate Society
 
                 </div>
             </div>
         </div></a>
 
-        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
+            <img class = "image__img" style="height: 170px;" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\aeolus.jpg" alt="Club Name">
             <div class="image__overlay">
-                <div class="image__title">Aeolus
+                <div class="image__title">Team Aeolus - DBC (fixed wing) divisions
 
                 </div>
             </div>
         </div></a>
     
-    <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-        <!--<img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
-        <div class="image__overlay">
-            <div class="image__title">Aeolus
-
-            </div>
-        </div>-->
+    <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
         <div class = "add_bt" id= "xop-box">
-            <i class="fa fa-plus" id="add" style="font-size:20px;color:white"></i>
+            <i class="fa fa-plus" id="add" style="font-size: 22px;color:white"></i>
         </div>
         
     </div></a>
     </div>
     
-    <div class="main">
-        <h1 class="header">Clubs in other Universities</h1>
-        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
+   
+    <h1 class="header">Clubs in other Universities</h1>
+        <div class="main">
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
+            <img class = "image__img" style="height: 170px;" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\vegavathracing.jpg" alt="Club Name">
             <div class="image__overlay">
-                <div class="image__title">Aeolus
+                <div class="image__title">Vegavath Racing
 
                 </div>
             </div>
         </div></a>
 
 
-        <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
+        <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
+            <img class = "image__img" style="height: 170px;" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
             <div class="image__overlay">
-                <div class="image__title">Aeolus
+                <div class="image__title">Apostrophe
 
                 </div>
             </div>
         </div></a>
 
-    <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-            <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
+    <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
+            <img class = "image__img" style="height: 170px;" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\hashtag.jpg" alt="Club Name">
             <div class="image__overlay">
-                <div class="image__title">Aeolus
+                <div class="image__title">Hashtag
 
                 </div>
             </div>
         </div></a>
-    <a href ="https://jinja.palletsprojects.com/en/3.0.x/">
+    <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank">
     <div class="image">
-        <img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_club2.jpg" alt="Club Name">
+        <img class = "image__img" style="height: 170px;" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\equinox.jpg" alt="Club Name">
         <div class="image__overlay">
-            <div class="image__title">Aeolus
+            <div class="image__title">Equinox-The Space Club
 
             </div>
         </div>
     </div></a>
 
-    <a href ="https://jinja.palletsprojects.com/en/3.0.x/"><div class="image">
-        <!--<img class = "image__img" src = "C:\\Users\\Nive\\Desktop\\ICEBREAKER\\filler_clublogo.jpg" alt="Club Name">
-        <div class="image__overlay">
-            <div class="image__title">Aeolus
-
-            </div>
-        </div>-->
+    <a href ="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank"><div class="image">
         <div class = "add_bt" id= "xop-box">
-            <i class="fa fa-plus" id="add" style="font-size:20px;color:white"></i>
+            <i class="fa fa-plus" id="add" style="font-size: 22px;color:white"></i>
         </div>
         
     </div></a>
 
 </div>
-
-<script>
-    const csv = require('csv-parser');
-    const fs = require('fs');
-    var results = [];
-    var suggestions = [];
-
-    fs.createReadStream('C:\\Users\\Nive\\Desktop\\ICEBREAKER\\clubdata.csv')
-        .pipe(csv({}))
-        .on('data',(data)=> window.results.push(data))
-        .on('end',()=> {
-            for(let i=0;i<results.length;i++)
-            {
-                //console.log("hi");
-                window.suggestions.push(results[i].Club);
-                
-            }
-            //console.log(suggestions);
-            //suggestions;                                          
-            //console.log("hi"+results+"bye");
-        });
-
-
-    console.log(suggestions);
+    <script>
     </script>
+    
+    <script src="suggestions.js"></script> 
+    <script  src="script.js"></script> 
     
     </body>
 </html>
