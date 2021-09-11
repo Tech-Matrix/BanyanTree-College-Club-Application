@@ -13,7 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .slide{
+            display: none;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="sidebar">
@@ -42,14 +49,14 @@
        <span class="tooltip">User</span>
      </li>
      <li>
-       <a href="#">
+       <a href="./ComingSoon.html">
          <i class='bx bx-chat' ></i>
          <span class="links_name">Messages</span>
        </a>
        <span class="tooltip">Messages</span>
      </li>
      <li>
-       <a href="#">
+       <a href="./ComingSoon.html">
          <i class='bx bx-heart' ></i>
          <span class="links_name">Clubs you follow</span>
        </a>
@@ -78,7 +85,16 @@
       <div class="text">Welcome to PES University
         <p>Home</p>
       </div>
+      
       <div class="container">
+
+        <div class="slideshow">
+          <img src="./assets/icebreakr.jpeg" alt="" width="70%" class="slide" id="slide1">
+          <img src="./assets/ice_crawlr.jpeg" alt="" width="70%" class="slide" id="slide2">
+          <img src="./assets/ice_crawl2r.jpeg" alt="" width="70%" class="slide" id="slide3">
+          <img src="./assets/ice_sec.jpeg" alt="" width="70%" class="slide" id="slide4">
+        </div>
+
         <div class="calendar">
           <div class="month">
             <i class="fas fa-angle-left prev"></i>
@@ -103,7 +119,7 @@
   
       <script src="Calendar.js"></script>
   </section>
-  <script>
+  <script defer>
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
   let searchBtn = document.querySelector(".bx-search");
@@ -126,6 +142,37 @@
      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
    }
   }
+  let i=0;
+
+  function slides(){
+    console.log(i)
+    if (i>4) i=1;
+    else if (i>-1) i++;
+    console.log("slide11");
+    document.querySelector(`#slide${i}`).classList.remove("slide")
+    
+    
+  }
+  console.log(i)
+  
+  function noslides(){
+    console.log(i)
+    // if(i>-1) i++;
+    // else if(i>4) i=0;
+    console.log("slide2");
+    console.log(i)
+    document.querySelector(`#slide${i}`).classList.add("slide")
+    if(i==4)i=0;
+    
+  }
+  console.log(i)
+//   document.querySelector(`#slide${i}`).classList.remove("slide")
+slides()
+// noslides()
+setInterval(noslides , 2000);
+setInterval(slides , 2000);
+
+  
   </script>
 </body>
 </html>
