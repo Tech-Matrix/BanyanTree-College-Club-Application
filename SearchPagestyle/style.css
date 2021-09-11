@@ -9,9 +9,10 @@
 .header
 {
   color: #efefef;
+  padding: 30px;
 }
 body{
-  background-image: url('C:\\Users\\Nive\\Desktop\\ICEBREAKER\\bgimg.jpg');
+  background-image: url('C:\\Users\\Nive\\Downloads\\ash-edmonds-azkczZ4rOgk-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
